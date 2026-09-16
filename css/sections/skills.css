@@ -1,0 +1,86 @@
+.skills__container {
+  margin-top: -50px;
+}
+.skills__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+.skills__grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-rows: repeat(2, minmax(320px, auto));
+  gap: 12px;
+}
+.skills__grid_item_header {
+  & div {
+    display: flex;
+    gap: 12px;
+  }
+  & h2 {
+    font-size: var(--h2-font-size);
+    line-height: var(--h2-line-height);
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  & p {
+    margin-top: 8px;
+    font-size: var(--p-font-size);
+    color: var(--n-600);
+    max-width: 60ch;
+  }
+}
+.skills__grid_item {
+  overflow: hidden;
+  border: 2px solid var(--p-100);
+  border-radius: 24px;
+  background-color: var(--p-50);
+  padding: 2rem;
+  &:nth-child(2) {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: space-between;
+    & .icons-list-wrapper{
+        overflow: hidden;
+        margin-top: 12px;
+        display: flex;
+        gap: 8px;
+    }
+    & .icons-list{
+        display: flex;
+        gap: 24px;
+        flex-shrink: 0;
+    }
+    & .icons-badge:nth-child(even){
+        background:linear-gradient(to right, var(--p-300), var(--p-500));
+        color: white;
+    }
+    & .icons-badge:nth-child(odd){
+        border: 1px solid var(--p-100);
+    }
+    .icons-badge{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border-radius: 8px;
+        padding: 4px 1rem;
+        
+    }
+  }
+  &:nth-child(3) {
+    grid-column: span 2;
+  }
+  &:nth-child(1){
+    background-image: url(../../assets/neko.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+}

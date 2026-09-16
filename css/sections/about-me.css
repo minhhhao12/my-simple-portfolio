@@ -1,0 +1,79 @@
+.aboutMe__section{
+    margin: 140px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1660px;
+    position: relative;
+
+
+    & img{
+        position: absolute;
+        z-index: -10;
+        width: 200px;
+        height: auto;
+    }
+    & img:nth-child(1){
+        z-index: -1;
+        top: -10%;
+        left: 4%;
+    }
+    & img:nth-child(2){
+        z-index: -2;
+        bottom: -10%;
+        right: 4%;
+    }
+}
+.aboutMe__container{
+    padding: 3rem;
+    width: 70%;
+    border-radius: 2rem;
+    background-color: var(--p-100);
+    & .aboutMe__content-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+        background-color: white;
+        border-radius: 3rem;
+        padding: 2rem;
+    }
+    & .CTA{
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    & h1{   
+        color: var(--p-500);
+    }
+    & p{
+        color: var(--n-600);
+    }
+    & .aboutMe__button--cv{
+        background-color: var(--p-600);
+        color: white;
+        border: 1px solid var(--p-600);
+    }
+    & a{
+        cursor: pointer;
+        font-weight: 600;
+        padding: 12px 12px;
+        border-radius: 1rem;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    & .aboutMe__button--project{
+        border: 1.5px solid var(--p-600);
+        color: var(--p-600);
+    }
+    & .aboutMe__button--project:hover{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    & .aboutMe__button--cv:hover{
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+
+}

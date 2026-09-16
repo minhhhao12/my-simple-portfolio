@@ -1,0 +1,72 @@
+/* Desktop */
+
+@media (max-width: 1536px) {
+    .container{
+        max-width: 1440px;
+    }
+    
+}
+@media (max-width:1440px){
+    .container{
+        max-width: 1028px;
+    }
+}
+
+
+/* Tablet, Small Laptop */
+@media (max-width:1280px){
+    .container{
+        max-width: 1024px;
+    }
+    & .header__container{
+        flex-direction: column;
+    }
+    & .header__column--left{
+        flex-direction:column;
+    }
+    & .header__content--left{
+        align-items: center;
+    }
+    & p{
+        text-align: center;
+    }
+    & .header__column--right{
+        align-items: center;
+        text-align: center;
+    }
+}
+/* Small tablet */
+@media (max-width:768px){
+    .container{
+        max-width: 640px;
+    }
+    .aboutMe__section{
+        margin: 60px auto;
+
+    & .section__title{
+        text-align: center;
+    }    
+
+    & img{
+        display: none;
+    }
+    }
+
+}
+/* Phone */
+@media (max-width:640px){
+    .container{
+        max-width: 475px;
+    }
+    :root{
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+    .section__title{
+        text-align: center;
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+    
+    
+}
