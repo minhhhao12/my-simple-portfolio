@@ -70,7 +70,9 @@
         gap: 8px;
         border-radius: 8px;
         padding: 4px 1rem;
-        
+        & img{
+        height: 70%;
+    }
     }
   }
   &:nth-child(3) {
