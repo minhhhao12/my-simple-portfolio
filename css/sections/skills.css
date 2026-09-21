@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 8px;
   margin-bottom: 12px;
 }
 .skills__grid-container {
@@ -52,6 +52,12 @@
       margin-top: 12px;
       display: flex;
       gap: 8px;
+      &:nth-child(1) > .icons-list{
+        animation: move-left 30s linear infinite;
+      }
+      &:nth-child(2) > .icons-list{
+        animation: move-right 60s linear infinite;
+      }
     }
     & .icons-list {
       display: flex;
@@ -65,8 +71,8 @@
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
     & .icons-badge:nth-child(odd) {
-      border: 1px solid var(--p-100);
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      border: 1px solid hsla(var(--p-900-code),0.1);
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     }
     .icons-badge {
       display: flex;

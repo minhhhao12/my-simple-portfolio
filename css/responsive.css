@@ -9,6 +9,12 @@
   .container {
     max-width: 1028px;
   }
+  /* about me */
+  .aboutMe__section{
+    img{
+      display: none;
+    }
+  }
   /* Skills */
   .softSkills_badge {
     position: static !important;
@@ -70,6 +76,16 @@
     padding: 1rem 1rem;
     grid-column: span 1;
     grid-row: span 1;
+  }
+
+  /* Project */
+  .projects__section{
+    margin-top: 50px;
+  }
+
+  /* footer */
+  footer{
+    margin-top: 100px;
   }
 }
 /* Phone */

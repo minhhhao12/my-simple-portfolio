@@ -1,0 +1,11 @@
+footer{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: none;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: var(--caption-font-size);
+    color: var(--n-600);
+}
